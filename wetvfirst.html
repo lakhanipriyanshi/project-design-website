@@ -1,0 +1,525 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <style>
+        body {
+            background-color: rgb(12, 12, 12);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*header start*/
+        .header {
+            background-color: black;
+            height: 10%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            position: fixed;
+
+        }
+
+        input[type=text] {
+            border-radius: 20px;
+            width: 200px;
+            background: transparent;
+            color: white;
+            background-color: rgb(90, 87, 84);
+        }
+
+        .head a {
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin: 10px;
+
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu {
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .clock {
+            height: 40px;
+            width: 40px;
+            margin-top: 20px;
+        }
+
+        .app {
+            height: 40px;
+            width: 80px;
+            margin-top: 20px;
+        }
+
+        /*header end*/
+
+
+
+        /*scrollbar section start*/
+
+        .videos {
+            margin-top: 70px;
+            width: 60%;
+            float: left;
+        }
+
+        .sidebar-left {
+
+            height: 60%;
+            width: 100%;
+        }
+
+
+        .sidebar-right {
+            width: 50%;
+            margin-left: 48%;
+            color: white;
+            margin-top: 0%;
+
+        }
+
+        .sidebar-title p {
+            font-size: 25px;
+            margin-top: -70px;
+            /* margin-left: 330px; */
+            color: antiquewhite;
+            float: right;
+        }
+
+     
+
+        /*scrollbar section end*/
+        /*poster start*/
+        .left-video {
+            float: left;
+
+        }
+
+        .right-video {
+            float: right;
+
+        }
+
+        img {
+            width: 170px;
+            height: 20px;
+            margin-left: 25px;
+            margin-bottom: 18px;
+        }
+
+        .title {
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
+            /* margin-left: 10px; */
+            margin-right: 250px;
+            margin-top: -850px;
+            font-family: Arial, Helvetica, sans-serif;
+
+
+        }
+
+        h2,
+        h2,
+        h4 {
+            color: white;
+            margin-left: 120px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            margin-left: 28px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        p {
+            color: rgb(150, 146, 142);
+            margin-left: 28px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        .second {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            height: 100%;
+        }
+
+        .poster {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 90px;
+            height: 100%;
+
+        }
+
+        .post {
+            display: flex;
+            height: 300px;
+            width: 200px;
+        }
+
+        .today img {
+            width: 140px;
+            height: 80px;
+            margin-top: 30px;
+            margin-left: -0px;
+
+        }
+
+        .today p {
+            color: white;
+            font-size: 14px;
+            margin-top: -75px;
+            margin-left: 160px;
+        }
+
+        /*poster end*/
+        /*footer start*/
+        footer {
+
+            margin-top: 1250px;
+            margin-left: 50px;
+        }
+
+        span {
+            color: rgb(170, 169, 169);
+            margin: 100px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*footer end*/
+    </style>
+</head>
+
+<body>
+    <script src="./fontawesome/js/all.min.js"></script>
+    <div class="main">
+
+        <div class="header">
+
+            <div class="logo">
+                <img src="C:\wamp\www\wetv app\image\logo1.JPG"  style="height: 40px; margin-top: 25px;"alt="">
+            </div> &nbsp; &nbsp; &nbsp;
+            <div class="head">
+            <a href="" class="">For You</a>
+            <a href="" class="">Tv Series</a>
+            <a href="" class="">Entertainment</a>
+            <a href="" class="">all </a>
+                 
+
+          
+            </div> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+            <input type="text" name="search" style="width: 350px; height:30px;">
+
+            <img src="C:\wamp\www\wetv app\image\clock.JPG" alt="" class="clock">
+            <img src="C:\wamp\www\wetv app\image\en.JPG" alt="" class="clock">
+            <img src="C:\wamp\www\wetv app\image\pr.JPG" alt="" class="clock">
+            <img src="C:\wamp\www\wetv app\image\app.JPG" alt="" class="app">
+            <img src="C:\wamp\www\wetv app\image\vip.JPG" alt="" class="app">
+        </div>
+        <div class="box" style="
+                                    
+                                    overflow-y: scroll;
+                                overflow-x: hidden;
+                                margin-right: 150px;
+                                background-color: rgb(25, 25, 25);
+                                margin-left: 120px;
+                                ">
+            <div class="video">
+                <div class="sidebar-left">
+                    <video controls autoplay muted height="540px" width="900px">
+                        <source src="C:\wamp\www\classes pratice\table\video (2).mp4" type="video/ogg">
+                    </video>
+                </div>
+            </div>
+            <div class="sidebar-right">
+                <!-- <div class="sti" style="position:fixed; "> -->
+                    <div class="sidebar-title">
+                        <p>WeTV Watch More 2022 </p>
+
+                    </div>
+                    <ul style="margin-top: -260px;">
+                        <li style="margin-left: 340px; margin-top: -34px;  list-style-type: none;
+                        font-size:20px;">Last episode</li>
+                        <li style="margin-left: 470px; margin-top: -38px;  list-style-type: none;
+                        font-size:20px;">Related Videos</li>
+                    </ul>
+
+                <!-- </div> -->
+                <!-- <div class="scr" style="overflow-y: auto;
+                                        overflow-x: hidden;
+                                        height: 500px;"> -->
+                            <div>
+                                <img src="C:\wamp\www\wetv app\image\we.JPG" style="width: 140px; 
+                                                                            height:80px;
+                                                                            margin-top: 30px; 
+                                                                            padding-left: 49%;" alt="">
+                            </div>
+                            <p style="color:white; 
+                                font-size:14px; 
+                                margin-left:500px; 
+                                margin-top: -70px; ">Take a peek at <br>WeTV 2022 |...</p>
+
+
+                            <div class="realated" style=" margin-left: 37%;
+                                                        margin-top: 50px;
+                                                        font-size:18px;
+                                                        ">
+                                <span style=" color: white;">Related Videos(7)</span>
+
+                            </div>
+                            <div class="play-link" style="margin-top: 20px;">
+                                <img src="C:\wamp\www\wetv app\image\rv1.JPG" style="width: 140px;
+                                    height:80px;  
+                                    padding-left: 49%;" alt="">
+                            </div>
+                            <p style="color:white; 
+                                font-size:14px; 
+                                margin-left:500px; 
+                                margin-top: -70px; ">New formula in <br>
+                                Tilik The Series</p>
+
+                            </div>
+                            <div class="play-link" style="margin-top: 10px;">
+                                <img src="C:\wamp\www\wetv app\image\rv2.JPG" style="width: 145px; 
+                                    height:80px;  
+                                    padding-left: 722px; 
+                                    margin-left:200px; 
+                                    margin-top:20px;" alt="">
+                            </div>
+                            <p style="color:white; 
+                                font-size:14px; 
+                                margin-left:1090px; 
+                                margin-top: -70px;">A little bit story</br> of Jodoh atau...</p>
+
+                            <div class="play-link" style="margin-top: 10px;">
+                                <img src="C:\wamp\www\wetv app\image\rv3.JPG" style="width: 145px; 
+                                        height:80px;  
+                                        padding-left: 722px; 
+                                        margin-left:200px; 
+                                        margin-top:20px;" alt="">
+                            </div>
+                            <p style="color:white; 
+                                    font-size:14px; 
+                                    margin-left:1090px; 
+                                    margin-top: -70px;">Antares S2 carry <br> out better...</p>
+
+                            <div class="play-link" style="margin-top: 10px;">
+                                <img src="C:\wamp\www\wetv app\image\rv4.JPG" style="width: 145px; 
+                                            height:80px;  
+                                            padding-left: 722px; 
+                                            margin-left:200px; 
+                                            margin-top:20px;" alt="">
+                            </div>
+                            <p style="color:white; 
+                                        font-size:14px; 
+                                        margin-left:1090px; 
+                                        margin-top: -70px;">MLMH S2 set out<br> with a new....</p>
+                            <div class="play-link" style="margin-top: 10px;">
+                                <img src="C:\wamp\www\wetv app\image\rv5.JPG" style="width: 145px; 
+                                                height:80px;  
+                                                padding-left: 722px; 
+                                                margin-left:200px; 
+                                                margin-top:20px;" alt="">
+                            </div>
+                            <p style="color:white; 
+                                            font-size:14px; 
+                                            margin-left:1090px; 
+                                            margin-top: -70px;">The story behind <br>Dikta &amp; Hukum....</p>
+                            <div class="play-link" style="margin-top: 10px;">
+                                <img src="C:\wamp\www\wetv app\image\rv6.JPG" style="width: 145px; 
+                                                    height:80px;  
+                                                    padding-left: 722px; 
+                                                    margin-left:200px; 
+                                                    margin-top:20px;" alt="">
+                            </div>
+                            <p style="color:white; 
+                                                font-size:14px; 
+                                                margin-left:1090px; 
+                                                margin-top: -70px;">Happy New Year</br> 2022!</p>
+                            <div class="play-link" style="margin-top: 10px;">
+                                <img src="C:\wamp\www\wetv app\image\rv7.JPG" style="width: 145px; 
+                                                        height:80px;  
+                                                        padding-left: 722px; 
+                                                        margin-left:200px; 
+                                                        margin-top:20px;" alt="">
+                            </div>
+                            <p style="color:white; 
+                                                    font-size:14px; 
+                                                    margin-left:1090px; 
+                                                    margin-top: -70px;">WeTV 2021 <br>Review | WeT....</p>
+
+            </div>
+        </div>
+
+
+        <div class="bottom">
+            <div class="left-video">
+                <h2 style=" margin-top: 50px;  font-family: Arial, Helvetica, sans-serif;">
+                    WeTV Watch More 2022&nbsp;<i class="fa-solid fa-arrow-up-from-bracket" style="font-size:15px;"></i>&nbsp;Share
+                       
+                </h2><br>
+                <h4>
+                    Entertainment is the art of WeTV. Let's unravel your WeTV Watch More 2022 journey together with us.
+                </h4>
+                <br><br><br>
+                <h2>Recommended for You</h2>
+                <br>
+
+                <div class="poster">
+                    <div><a href="C:\wamp\www\wetv app\wetv2.html"><img src="C:\wamp\www\wetv app\image\heart.JPG" alt=""
+                                class="post"></a>
+                        <a href="C:\wamp\www\wetv app\wetv2.html">Heart Signal</a>
+                        <p>Zhu Yawen and Yang Cha....</p>
+                    </div>
+
+                    <div>
+                        <a href="C:\wamp\www\wetv app\wetv2.html"><img src="C:\wamp\www\wetv app\image\2.JPG" alt=""
+                                class="post">
+                        </a><a href="C:\wamp\www\wetv app\wetv2.html">When My Love Blooms</a>
+                        <p>Yoo Jitae and Lee Boyoung....</p>
+                    </div>
+                    <div>
+                        <a href="C:\wamp\www\wetv app\wetv2.html"><img src="C:\wamp\www\wetv app\image\3.JPG" alt=""
+                                class="post"></a>
+                        <a href="C:\wamp\www\wetv app\wetv2.html">Taste humanity at night</a>
+                        <p>Taste humanity at night</p>
+
+                    </div>
+                    <div> <a href="C:\wamp\www\wetv app\wetv2.html">
+                            <img src="C:\wamp\www\wetv app\image\4.JPG" alt="" class="post"></a>
+                        <a href="C:\wamp\www\wetv app\wetv2.html">Rocket Girls 101 Farewell.</a>
+                        <p>Rocket Girls 101 Farewell Ce..</p>
+                    </div>
+
+                    <div class="second">
+                        <div> <a href="C:\wamp\www\wetv app\wetv2.html">
+                                <img src="C:\wamp\www\wetv app\image\5.JPG" alt="" class="post"></a>
+                            <a href="C:\wamp\www\wetv app\wetv2.html">FRESH ONE</a>
+                            <p>INTO1 Spring Vlo</p>
+                        </div>
+                        <div>
+                            <a href="C:\wamp\www\wetv app\wetv2.html">
+                                <img src="C:\wamp\www\wetv app\image\6.JPG" alt="" class="post">
+                            </a>
+                            <a href="C:\wamp\www\wetv app\wetv2.html">JOURNEY TO THE..</a>
+                            <p>Hatred and Love Between G</p>
+                        </div>
+                        <div>
+                            <a href="C:\wamp\www\wetv app\wetv2.html">
+                                <img src="C:\wamp\www\wetv app\image\7.JPG" alt="" class="post"></a>
+                            <a href="C:\wamp\www\wetv app\wetv2.html">Once Upon a Bite S2</a>
+                        </div>
+                        <div>
+                            <a href="C:\wamp\www\wetv app\wetv2.html">
+                                <img src="C:\wamp\www\wetv app\image\8.JPG" alt="" class="post"></a>
+                            <a href="C:\wamp\www\wetv app\wetv2.html">The Untamed Fan Meeting</a>
+                            <p>Xiao Zhan and Wang Yibo w</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="right-video">
+                <div class="title">
+                    Today's Hot Videos
+                </div>
+                <div class="hot-videos">
+                    <div class="today">
+                        <img src="C:\wamp\www\wetv app\image\today1.JPG" alt="">
+                        <p>What's Wrong With<br> Secretary Kim</p>
+                        <p style="margin-top:8px; color:rgb(90, 88, 88); font-size:13px">full</p>
+                    </div>
+                    <div class="today">
+                        <img src="C:\wamp\www\wetv app\image\today2.JPG" alt="">
+                        <p>Tale of The Nine Tailed</p>
+                        <p style="margin-top:25px; color:rgb(90, 88, 88); font-size:13px">full</p>
+                    </div>
+                    <div class="today">
+                        <img src="C:\wamp\www\wetv app\image\today3.JPG" alt="">
+                        <p>Be With You</p>
+                        <p style="margin-top:25px; color:rgb(90, 88, 88); font-size:13px">full</p>
+                    </div>
+                    <div class="today">
+                        <img src="C:\wamp\www\wetv app\image\today4.JPG" alt="">
+                        <p>Extraordinary You</p>
+                        <p style="margin-top:25px; color:rgb(90, 88, 88); font-size:13px">full</p>
+                    </div>
+
+                    <div class="today">
+                        <img src="C:\wamp\www\wetv app\image\today5.JPG" alt="">
+                        <p>Legend of the Blue Sea</p>
+                        <p style="margin-top:25px; color:rgb(90, 88, 88); font-size:13px">full</p>
+                    </div>
+
+                    <div class="today">
+                        <img src="C:\wamp\www\wetv app\image\today6.JPG" alt="">
+                        <p>Go Ahead</p>
+                        <p style="margin-top:25px;color:rgb(90, 88, 88); font-size:13px">full</p>
+                    </div>
+                    <div class="today">
+                        <img src="C:\wamp\www\wetv app\image\today7.JPG" alt="">
+                        <p>W - Two Worlds</p>
+                        <p style="margin-top:25px;color:rgb(90, 88, 88); font-size:13px">full</p>
+                    </div>
+                    <div class="today">
+                        <img src="C:\wamp\www\wetv app\image\today8.JPG" alt="">
+                        <p>Weightlifting Fairy, Kim Bok-<br>joo</p>
+                        <p style="margin-top:16px;color:rgb(90, 88, 88); font-size:13px">full</p>
+                    </div>
+                    <div class="today">
+                        <img src="C:\wamp\www\wetv app\image\today9.JPG" alt="">
+                        <p>While You Were Sleeping</p>
+                        <p style="margin-top:28px;color:rgb(90, 88, 88); font-size:13px">full</p>
+                    </div>
+                    <div class="today">
+                        <img src="C:\wamp\www\wetv app\image\today10.JPG" alt="">
+                        <p>Perfect World</p>
+                        <p style="margin-top:25px;color:rgb(90, 88, 88); font-size:13px">Updated to 88 EP</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            <div>
+                <span> Copyright © 2016-2023 Image Future Investment (HK) Limited.</span><br>
+
+                <span>Term of Service | Privacy Policy | Cookie Policy | Feedback | FAQs | @iflix</span>
+                <div><img src="C:\wamp\www\wetv app\image\scanner.JPG" alt=""
+                        style="width:70px; height:70px; float:right;margin-right:380px;margin-top: -50px;"></div>
+                <div>
+                    <p style="font-size:14px;
+                             padding-left: 1090px;
+                             margin-bottom: -9px;
+                             margin-top: -30px;">Scan QR code to</p>
+                    <p style="font-size:14px;
+                    padding-left: 1090px;
+                    "> download App Now !</p>
+                       
+                </div>
+        </footer>
+</body>
+
+</html>
